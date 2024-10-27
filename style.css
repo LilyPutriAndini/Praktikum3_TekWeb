@@ -1,0 +1,36 @@
+body {
+    font-family: sans-serif;
+}
+.container {
+    width: 350px;
+    margin: 0 auto;
+}
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+}
+#taskList {
+    list-style: none;
+    padding: 0;
+}
+#taskList li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+.close {
+    color: red;
+    float: right;
+    cursor: pointer;
+}
+
+body.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+.completed {
+    text-decoration: line-through;
+    color: gray;
+}

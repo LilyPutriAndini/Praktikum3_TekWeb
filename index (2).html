@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>To-Do App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>My To-Do List</h2>
+        <input type="text" id="newTask" placeholder="Add a new task...">
+        <button onclick="addTask()">Add</button>
+        <ul id="taskList">
+        </ul>
+    </div>
+
+    <div class="container">
+        <h2>Customize Page</h2>
+        <label for="bgColor">Background Color:</label>
+        <select id="bgColor" onchange="changeBackgroundColor()">
+            <option value="white">White</option>
+            <option value="lightgrey">Light Grey</option>
+            <option value="yellow">Yellow</option>
+            <option value="pink">Pink</option>
+        </select>
+        <br><br>
+        <label for="fontSize">Font Size:</label>
+        <input type="range" id="fontSize" min="12" max="36" value="16" oninput="changeFontSize()">
+        <br><br>
+        <button id="toggleDarkMode" onclick="toggleDarkMode()">Toggle Dark Mode</button>
+        <br><br>
+        <label for="fontStyle">Font Style:</label>
+        <select id="fontStyle" onchange="changeFontStyle()">
+            <option value="sans-serif">Sans-serif</option>
+            <option value="serif">Serif</option>
+        </select>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
